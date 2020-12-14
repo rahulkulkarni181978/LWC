@@ -1,0 +1,24 @@
+<template>
+  <div class="slds-grid slds-grid_vertical c-container">
+    <div class="slds-col" data-id="1" style="padding:0.5rem;background:rgb(255, 255, 255)">
+      <c-wm-community-schedule onsection2={navigatesection2}></c-wm-community-schedule>
+    </div>
+    <div class="slds-col" data-id="2" style="padding:0.5rem;background:#0071ba">
+      <span>2</span>
+    </div>
+    <div class="slds-col" data-id="3" style="padding:0.5rem;background:#e7a307">
+      <span>3</span>
+    </div>
+    <div class="slds-col" data-id="4" style="padding:0.5rem;background:#07e72c">
+      <span>4</span>
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li onclick={handleClick} class="link" data-block="1">Section 1</li>
+      <li onclick={handleClick} class="link" data-block="2">Section 2</li>
+      <li onclick={handleClick} class="link" data-block="3">Section 3</li>
+      <li onclick={handleClick} class="link" data-block="4">Section 4</li>
+    </ul>
+  </nav>
+</template>

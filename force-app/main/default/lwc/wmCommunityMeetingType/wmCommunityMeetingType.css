@@ -1,0 +1,34 @@
+.c-myfontheading1
+{
+    font-weight: var(--lwc-font-weight-bold);
+    font-size : x-large;
+}
+
+.my-round-button
+{
+    width: 166px;
+    height: 186px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.my-round-button-selected
+{
+    width: 166px;
+    height: 186px;
+    border-radius: 20px;
+    background-color: #8EA45C;
+}
+
+.image--cover-byphone {
+    width: 70px;
+    height: 62px;
+    margin-top: 50px;
+    object-position: center right;
+  }
+
+  input[type=text], select{
+      width: 411.61px;
+      height: 57.97px;
+      
+  }

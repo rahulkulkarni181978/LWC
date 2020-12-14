@@ -1,0 +1,48 @@
+ .slds-col{
+  height: 100vh;
+ }
+
+ nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 400px;
+  margin-left: -200px;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 0 0 4px 4px;
+  background-color: rgb(213, 216, 29);
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.link {
+  padding: 10px;
+  cursor: pointer;
+}
+
+[data-id="html"] {
+  background-color: rgb(255, 255, 255);
+  }
+[data-id="css"] {
+  background-color: #0071ba;
+}
+[data-id="js"] {
+  background-color: #e7a307;
+}
+
+a {
+  display: block;
+  width: 100px;
+  text-decoration: none;
+  color: inherit;
+}
+ 
+  

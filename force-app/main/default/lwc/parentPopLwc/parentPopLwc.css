@@ -1,0 +1,9 @@
+.slds-is-absolute
+{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 80px;
+    width: 200px;
+    height: 100px;
+}

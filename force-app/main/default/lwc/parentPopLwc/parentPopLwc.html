@@ -1,0 +1,14 @@
+<template>
+    <br></br>
+    <br></br>
+    <div class="slds-is-relative slds-m-right_medium">
+            <lightning-button onmouseenter={handleClick} variant="brand" label="Brand" title="Primary action" onclick={handleClick} class="slds-m-left_x-medium">
+            </lightning-button>
+        
+            <div class="slds-is-absolute">
+            <template if:true = {isShow}>
+                <c-child-pop-lwc onbuttonclosed={buttonClosed} onmouseleave={buttonClosed}></c-child-pop-lwc>
+            </template>
+            </div>
+    </div>
+</template>

@@ -1,0 +1,76 @@
+<template>
+    <div class="slds-text-heading_large slds-text-align_center slds-p-left_large c-myfontheading1">How would you like to meet?
+    </div>
+    <lightning-layout>
+        <lightning-layout-item size="4" padding="around-small">
+            <div class="slds-p-around_medium slds-grid_align-center">
+                
+            </div>
+        </lightning-layout-item>
+        <lightning-layout-item size="4" padding="around-small">
+            <div class="slds-p-around_medium slds-text-align_center">
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col">
+                        <div data-id="phone" class="slds-border_bottom slds-border_left slds-border_right slds-border_top my-round-button" onclick={handleclick}>
+                            <div class="slds-grid slds-grid_vertical">
+                                <div class="slds-col slds-grid_align-center">
+                                    <img src={logobyphone} class="image--cover-byphone" />
+                                  </div>
+                                  <br></br>
+                                  <div class="slds-col">
+                                    <span class="slds-text-heading_large slds-text-align_center slds-p-left_large c-myfontheading1">By Phone</span>
+                                  </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="slds-col">
+                        <div class="slds-border_bottom slds-border_left slds-border_right slds-border_top my-round-button">
+                            <div class="slds-grid slds-grid_vertical">
+                                <div class="slds-col slds-grid_align-center">
+                                    <img src={logobybranch} class="image--cover-byphone" />
+                                  </div>
+                                  <br></br>
+                                  <div class="slds-col">
+                                    <span class="slds-text-heading_large slds-text-align_center slds-p-left_large c-myfontheading1">In Branch</span>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-col">
+                        <div class="slds-border_bottom slds-border_left slds-border_right slds-border_top my-round-button">
+                            <div class="slds-grid slds-grid_vertical">
+                                <div class="slds-col slds-grid_align-center">
+                                    <img src={logobyvideo} class="image--cover-byphone" />
+                                  </div>
+                                  <br></br>
+                                  <div class="slds-col">
+                                    <span class="slds-text-heading_large slds-text-align_center slds-p-left_large c-myfontheading1">By Video</span>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <template if:true={isphone}>
+                <br/>
+                <div>
+                    <input type="text" placeholder="(919) 931-9903..">
+                    <br/>
+                    <input type="text" placeholder="">
+                </div>
+                <br/>
+                <div>
+                    <lightning-button variant="brand" label="Next" title="Primary action" onclick={handleNext} class="slds-m-left_x-large"></lightning-button>
+                </div>
+            </template>
+            </div>
+        </lightning-layout-item>
+        <lightning-layout-item size="4" padding="around-small">
+            <div class="slds-p-around_medium slds-text-align_center">
+
+            </div>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>
